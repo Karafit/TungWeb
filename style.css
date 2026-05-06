@@ -1,0 +1,189 @@
+/* Import a clean, geometric font similar to Google Sans */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+/* General Setup */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Uses Google Sans if installed, otherwise defaults to Outfit */
+    font-family: 'Google Sans', 'Outfit', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* Very light warm cream background */
+    background-color: #fff8f0; 
+    /* Dark brown text for readability instead of pure black */
+    color: #3e2723; 
+}
+
+/* Navigation Menu */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #ffe0b2; /* Light orange */
+    border: 2px solid #8d6e63; /* Warm brown border */
+    border-radius: 8px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    box-shadow: 3px 3px 0px #8d6e63; /* Playful shadow */
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #3e2723;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-left: 2px solid #8d6e63;
+    transition: background-color 0.2s ease;
+}
+
+.nav-links a:hover {
+    background-color: #ffb74d; /* Brighter orange on hover */
+}
+
+/* --- HOME PAGE STYLES --- */
+.home-container {
+    display: flex;
+    gap: 40px;
+}
+
+.home-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.button-box {
+    background-color: #ffcc80;
+    border: 2px solid #8d6e63;
+    border-radius: 8px;
+    padding: 12px 20px;
+    text-align: center;
+    width: 80%;
+    font-weight: 700;
+    color: #d84315; /* Burnt orange text */
+    box-shadow: 3px 3px 0px #8d6e63;
+}
+
+.text-box {
+    background-color: #ffffff; /* White background to pop against the cream */
+    border: 2px solid #8d6e63;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 3px 3px 0px #8d6e63;
+}
+
+.home-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-image {
+    max-width: 100%;
+    height: auto;
+    border: 4px solid #8d6e63;
+    border-radius: 12px;
+    box-shadow: 5px 5px 0px #8d6e63;
+}
+
+/* --- ABOUT ME PAGE STYLES --- */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffe0b2; /* Light orange container */
+    padding: 40px;
+    border-radius: 12px;
+    border: 2px solid #8d6e63;
+    box-shadow: 5px 5px 0px #8d6e63;
+}
+
+.about-section h2 {
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #d84315; /* Burnt orange heading */
+}
+
+.about-section p {
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+    font-weight: 400;
+}
+
+/* --- CONTACT PAGE STYLES --- */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-header {
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #d84315;
+}
+
+.contact-content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid #8d6e63;
+    box-shadow: 5px 5px 0px #8d6e63;
+}
+
+.contact-image {
+    max-width: 300px;
+    height: auto;
+    border: 3px solid #8d6e63;
+    border-radius: 8px;
+}
+
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-item {
+    text-align: center;
+}
+
+.contact-label {
+    background-color: #ffcc80;
+    border: 2px solid #8d6e63;
+    border-radius: 6px;
+    padding: 8px 20px;
+    margin-bottom: 5px;
+    display: inline-block;
+    min-width: 140px;
+    font-weight: 700;
+    color: #d84315;
+}
+
+.contact-value {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #5d4037;
+}
